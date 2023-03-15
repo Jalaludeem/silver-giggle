@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 40px;
+      }
+      form {
+        margin-top: 40px;
+      }
+      input[type='text'] {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+      button[type='submit'] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button[type='submit']:hover {
+        background-color: #3e8e41;
+      }
+      #result {
+        margin-top: 40px;
+        font-size: 18px;
+      }
+    </style>
+    <link href="style.css">
+
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+    <form id="url-form">
+      <label for="url-input">Enter URL:</label>
+      <input type="text" id="url-input" name="url-input" required />
+      <button type="submit">Shorten</button>
+    </form>
+    <div id="result"></div>
+    <script src="shorten.js"></script>
+  </body>
+</html>
